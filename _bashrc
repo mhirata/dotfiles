@@ -1,0 +1,9 @@
+export PATH=/usr/local/bin:$PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+alias v='vim'
+alias g='git'
+
+alias ls='ls -F'
+alias ll='ls -lh'
+alias la='ll -a'
