@@ -1,10 +1,13 @@
 set nocompatible
-set rtp+=~/.vim/vundle.git
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-haml'
+Bundle 'vim-ruby/vim-ruby'
 
 set wildmode=list:longest,list:full
 set number
