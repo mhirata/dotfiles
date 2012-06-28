@@ -9,6 +9,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-haml'
 Bundle 'vim-ruby/vim-ruby'
 
+syn on
+
 set wildmode=list:longest,list:full
 set number
 set autoindent
