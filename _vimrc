@@ -1,5 +1,5 @@
 set nocompatible
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
