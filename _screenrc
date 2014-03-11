@@ -1,3 +1,5 @@
+escape ^Zz
+
 bind w windowlist -b
 windows on
 # スクロールバッファは最大10000行にする
