@@ -1,0 +1,13 @@
+[alias]
+	br = branch
+	co = checkout
+        st = status
+        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	ci = commit -v
+[color]
+	ui = true
+[user]
+	name = Moriyuki Hirata
+	email = m-hirata@esm.co.jp
+[core]
+	excludesfile = ~/.gitignore
