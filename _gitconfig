@@ -11,3 +11,4 @@
 	email = m-hirata@esm.co.jp
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim
