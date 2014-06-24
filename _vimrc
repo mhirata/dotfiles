@@ -19,6 +19,8 @@ set autoindent
 set shiftwidth=2
 set expandtab
 set cursorline
+set t_Co=256
+highlight CursorLine cterm=none term=reverse ctermbg=242
 set background=dark
 
 filetype plugin indent on
