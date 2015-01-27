@@ -4,6 +4,8 @@
         st = status
         hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	ci = commit -v
+        lg = log --oneline --decorate --graph
+        lp = log -p --stat
 [color]
 	ui = true
 [user]
@@ -12,3 +14,5 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
+[push]
+        default = tracking
