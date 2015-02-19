@@ -13,18 +13,25 @@ Bundle 'Shougo/neosnippet.vim'
 
 syn on
 
-set wildmode=list:longest,list:full
-set number
 set autoindent
-set shiftwidth=2
-set expandtab
-set cursorline
-set t_Co=256
-highlight CursorLine cterm=none term=reverse ctermbg=242
 set background=dark
+set cursorline
+set expandtab
+set laststatus=2
+set nobackup
+set number
+set shiftwidth=2
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}%=%l,%c%v%8p
+set t_Co=256
+set wildmode=list:longest,list:full
 
 filetype plugin indent on
+
+highlight CursorLine cterm=none term=reverse ctermbg=242
 
 " 自動的に QuickFix リストを表示する
 autocmd QuickFixCmdPost make,grep,grepadd,vimgrep,vimgrepadd cwin
 autocmd QuickFixCmdPost lmake,lgrep,lgrepadd,lvimgrep,lvimgrepadd lwin
+
+autocmd InsertEnter * highlight StatusLine ctermfg=red
+autocmd InsertLeave * highlight StatusLine ctermfg=white
