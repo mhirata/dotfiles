@@ -24,6 +24,7 @@ set shiftwidth=2
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}%=%l,%c%v%8p
 set t_Co=256
 set wildmode=list:longest,list:full
+set tabstop=4
 
 filetype plugin indent on
 
