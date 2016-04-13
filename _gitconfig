@@ -1,11 +1,11 @@
 [alias]
 	br = branch
 	co = checkout
-        st = status
-        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    st = status
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	ci = commit -v
-        lg = log --oneline --decorate --graph
-        lp = log -p --stat
+    lg = log --oneline --decorate --graph
+    lp = log -p --stat
 [color]
 	ui = true
 [user]
@@ -15,4 +15,4 @@
 	excludesfile = ~/.gitignore
 	editor = vim
 [push]
-        default = tracking
+    default = tracking
