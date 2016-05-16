@@ -127,6 +127,8 @@ EDITOR=vim
 source ~/.bash-git-completion.sh
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 export GIT_PS1_SHOWDIRTYSTATE
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUPSTREAM=1
 
 # bash_hostory
 function share_history {
