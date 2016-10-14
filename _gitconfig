@@ -1,18 +1,18 @@
 [alias]
-	br = branch
-	co = checkout
-    st = status
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	ci = commit -v
-    lg = log --oneline --decorate --graph
-    lp = log -p --stat
+  br = branch
+  co = checkout
+  st = status
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  ci = commit -v
+  lg = log --oneline --decorate --graph
+  lp = log -p --stat
 [color]
-	ui = true
+  ui = true
 [user]
-	name = Moriyuki Hirata
-	email = m-hirata@esm.co.jp
+  name = Moriyuki Hirata
+  email = m-hirata@esm.co.jp
 [core]
-	excludesfile = ~/.gitignore
-	editor = vim
+  excludesfile = ~/.gitignore
+  editor = vim
 [push]
-    default = tracking
+  default = tracking
