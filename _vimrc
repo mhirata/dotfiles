@@ -10,6 +10,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-haml'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'Shougo/neosnippet.vim'
+Bundle 'elixir-lang/vim-elixir'
 
 syn on
 
