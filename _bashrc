@@ -153,3 +153,8 @@ if [ -f '/home/moriyuki/google-cloud-sdk/path.bash.inc' ]; then source '/home/mo
 if [ -f '/home/moriyuki/google-cloud-sdk/completion.bash.inc' ]; then source '/home/moriyuki/google-cloud-sdk/completion.bash.inc'; fi
 
 export PATH="$HOME/workspace/terraform/:$PATH"
+
+export PATH="$HOME/bin:$PATH"
+if [ -f ~/.config/exercism/exercism_completion.bash ]; then
+  . ~/.config/exercism/exercism_completion.bash
+fi
