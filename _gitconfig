@@ -16,3 +16,5 @@
   editor = vim
 [push]
   default = tracking
+[grep]
+  lineNumber = true
