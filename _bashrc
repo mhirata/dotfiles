@@ -121,6 +121,8 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 keychain id_rsa
 . $HOME/.keychain/`hostname`-sh
+keychain github_rsa
+. $HOME/.keychain/`hostname`-sh
 
 EDITOR=vim
 
