@@ -18,3 +18,5 @@
   default = tracking
 [grep]
   lineNumber = true
+[ghq]
+  root = ~/src
