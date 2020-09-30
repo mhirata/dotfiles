@@ -36,3 +36,9 @@ autocmd QuickFixCmdPost lmake,lgrep,lgrepadd,lvimgrep,lvimgrepadd lwin
 
 autocmd InsertEnter * highlight StatusLine ctermfg=red
 autocmd InsertLeave * highlight StatusLine ctermfg=white
+
+" swapの作成場所
+set directory=~/.vim/tmp
+if !isdirectory(expand("$HOME/.vim/tmp"))
+  call mkdir(expand("$HOME/.vim/tmp"), "p")
+endif
