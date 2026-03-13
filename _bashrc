@@ -1,6 +1,8 @@
 export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 
+eval "$(/home/moriyuki/.local/bin/mise activate bash)"
+
 alias v='vim'
 alias g='git'
 alias be='bundle exec'
@@ -35,8 +37,8 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
-HISTFILESIZE=10000
+HISTSIZE=1000000
+HISTFILESIZE=1000000
 HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S '
 
 # check the window size after each command and, if necessary,
@@ -155,8 +157,7 @@ if [ -f ~/.config/exercism/exercism_completion.bash ]; then
 fi
 
 alias gi='cd $(ghq root)/$(ghq list | peco)'
-alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
 export SCREENDIR=$HOME/.screen
 
-eval "$(rtx activate bash)"
+export SOLID_QUEUE_IN_PUMA=true
