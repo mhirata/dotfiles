@@ -1,0 +1,22 @@
+# frozen_string_literal: true
+
+# ダーク背景で読みづらい BLUE(34) を CYAN(36) に差し替える。
+# INTEGER / CONSTANT / COMMENT / method_name 等が対象。
+require 'irb/color'
+IRB::Color.const_get(:TOKEN_SEQS).each_value do |esc|
+  esc.gsub!("\e[34m", "\e[36m")
+end
+
+# Rails コンソールでの ActiveRecord SQL ログ: SELECT が BLUE(34) で暗い。
+# bright cyan(96) に差し替え。"User Load" プレフィックスが cyan(36) なので
+# SQL 本文は bright cyan にして両者を区別する。
+if defined?(ActiveRecord::LogSubscriber)
+  ActiveRecord::LogSubscriber.prepend(Module.new do
+    private
+
+    def sql_color(sql)
+      c = super
+      c == ActiveSupport::LogSubscriber::BLUE ? "\e[96m" : c
+    end
+  end)
+end
