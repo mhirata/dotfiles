@@ -2,6 +2,8 @@ export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 
 eval "$(/home/moriyuki/.local/bin/mise activate bash)"
+# 非対話シェルでも .ruby-version 等を実行時解決させるため shims を PATH 先頭に置く
+export PATH="$HOME/.local/share/mise/shims:$PATH"
 
 alias v='vim'
 alias g='git'
