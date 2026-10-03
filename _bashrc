@@ -28,6 +28,10 @@ export PGUSER=postgres
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
